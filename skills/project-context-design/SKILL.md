@@ -42,6 +42,10 @@ Route within the Codex reference by need:
 - authority, state, or handoffs: sections 4 and 7;
 - enforcement, failure analysis, or release validation: sections 8 through 10.
 
+### Codex topology examples
+
+After reading the relevant Codex repository guidance, read [Codex Repository Topology Examples](references/codex-repository-topology-examples.md) only when the user requests a concrete tree or layout, plausible repository topologies need comparison, or abstract guidance is insufficient for an actionable design. Adapt the smallest relevant example to the actual domain and remove unwarranted surfaces. Do not load the examples alone, treat them as templates, or use them for ordinary architecture advice that does not need a concrete layout.
+
 ## Establish the operating context
 
 Inspect available project files, instructions, tools, permissions, retrieval behavior, memory or state, and exact interfaces when they are accessible. Ask only for material facts that cannot be discovered.

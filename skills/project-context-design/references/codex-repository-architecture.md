@@ -74,6 +74,8 @@ An index routes by topic, purpose, status, and use condition. It should not rest
 
 ## 5. Choose repository boundaries deliberately
 
+When a concrete layout would materially aid the decision, consult [Codex Repository Topology Examples](codex-repository-topology-examples.md) after applying the boundary guidance below. The examples are adaptable calibration aids, not required anatomy.
+
 ### Modular monorepo
 
 Prefer one modular repository when projects or work streams share substantial doctrine, state, artifacts, tooling, and history; when transitions are frequent; or when atomic cross-area changes matter. Use semantically coherent subtrees, thin persistent instructions, conditional Skills, indexed sources, and explicit handoffs to prevent the shared repository from becoming a shared ambiguity surface.

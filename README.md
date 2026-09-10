@@ -11,13 +11,13 @@ The project favors minimum-sufficient guidance: communicate the goal, necessary 
 
 The Project Context and Capability Design Standard is Active at version 1.0.0; the Review and Change Ops Standard is Active at version 1.0.1. Stable filenames identify their interfaces, and the metadata inside each file identifies its released version.
 
-The v1.1.1 bundle refines the conditional Codex repository-architecture depth introduced in v1.1.0 and makes review, validation, and migration guidance more proportionate for solo and small-group work.
+The v1.1.2 bundle adds selectively loaded Codex repository topology examples for concrete layout and comparison requests. The examples remain subordinate calibration aids rather than required templates. It retains the v1.1.1 proportional review guidance and refined Codex architecture reference.
 
 ## Skills
 
 The repository also provides three focused skill bundles:
 
-- [Project Context Design](skills/project-context-design/SKILL.md) designs or revises project instructions, source architecture, capability allocation, reference documents, and split-or-merge decisions. It conditionally loads the project and capability standard for consequential or ambiguous architecture work, and a maintained Codex repository-architecture reference only when filesystem or Git structure materially affects Codex execution.
+- [Project Context Design](skills/project-context-design/SKILL.md) designs or revises project instructions, source architecture, capability allocation, reference documents, and split-or-merge decisions. It conditionally loads the project and capability standard for consequential or ambiguous architecture work, a maintained Codex repository-architecture reference when filesystem or Git structure materially affects Codex execution, and concrete topology examples only when a layout or comparison would help.
 - [Prompt Design](skills/prompt-design/SKILL.md) creates or revises one-off prompts, reusable prompts, invocation wrappers, research prompts, and Deep Research prompts.
 - [Review and Change](skills/review-and-change/SKILL.md) reviews project, prompt, knowledge, or capability systems and plans controlled patches, rewrites, migrations, or supersession. It includes the review and change standard as callable depth for structural or cross-artifact work.
 
