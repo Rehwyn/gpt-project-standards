@@ -7,9 +7,13 @@ description: Design or revise project instructions, context and source architect
 
 Design the smallest reliable project system for the actual runtime. Begin with the work the project must support, the consequences of missing context or capability, and the user's existing constraints. Do not assume that a richer architecture is better.
 
-## Callable standard depth
+## Callable reference depth
 
-Handle ordinary work from this skill. Read only the relevant headings of [Project Context and Capability Design Standard](references/project-context-and-capability-standard.md) when the task:
+Handle ordinary work from this skill. Load additional depth only when the task requires it.
+
+### General standard reference
+
+Read only the relevant headings of [Project Context and Capability Design Standard](references/project-context-and-capability-standard.md) when the task:
 
 - is a consequential whole-project or cross-environment architecture decision;
 - crosses several context or capability forms and their ownership is unclear;
@@ -17,7 +21,26 @@ Handle ordinary work from this skill. Read only the relevant headings of [Projec
 - depends on an exact pattern or acceptance criterion not reproduced here; or
 - exposes material ambiguity that this skill does not resolve.
 
-The reference is a bundled snapshot of active standard `0-01` v1.0.0. Apply its relevant depth rather than summarizing it, and do not load it merely because it is available.
+This reference is a bundled snapshot of active standard `0-01` v1.0.0. Apply its relevant depth rather than summarizing it, and do not load it merely because it is available.
+
+### Codex repository reference
+
+Read the relevant sections of [Codex Repository Architecture](references/codex-repository-architecture.md) only when:
+
+- the target environment is Codex;
+- filesystem or Git repository structure materially affects execution; and
+- the task involves repository topology, working-directory scope, `AGENTS.md` placement, repository Skills, authoritative-source routing, state and handoffs, worktrees, agent-heavy workflows, or repository validation.
+
+Do not load this reference for general ChatGPT Project design, ordinary prompt drafting, routine code changes, or Codex tasks whose repository structure is not part of the decision.
+
+For consequential Codex architecture work, also consult the general standard reference when authority, capability allocation, split/merge judgment, or cross-environment behavior is material.
+
+Route within the Codex reference by need:
+
+- discovery, configuration, instruction scope, or repository Skills: sections 2 and 6;
+- repository topology, project-first or lane-first organization, splits, or worktrees: sections 3 and 5;
+- authority, state, or handoffs: sections 4 and 7;
+- enforcement, failure analysis, or release validation: sections 8 through 10.
 
 ## Establish the operating context
 

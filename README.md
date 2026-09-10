@@ -11,11 +11,13 @@ The project favors minimum-sufficient guidance: communicate the goal, necessary 
 
 Both standards are Active at version 1.0.0. Stable filenames identify their interfaces; the metadata inside each file identifies its released version.
 
+The v1.1.0 bundle adds conditional Codex repository-architecture depth without changing either standard's version or authority.
+
 ## Skills
 
 The repository also provides three focused skill bundles:
 
-- [Project Context Design](skills/project-context-design/SKILL.md) designs or revises project instructions, source architecture, capability allocation, reference documents, and split-or-merge decisions. It includes the project and capability standard as callable depth for consequential or ambiguous architecture work.
+- [Project Context Design](skills/project-context-design/SKILL.md) designs or revises project instructions, source architecture, capability allocation, reference documents, and split-or-merge decisions. It conditionally loads the project and capability standard for consequential or ambiguous architecture work, and a maintained Codex repository-architecture reference only when filesystem or Git structure materially affects Codex execution.
 - [Prompt Design](skills/prompt-design/SKILL.md) creates or revises one-off prompts, reusable prompts, invocation wrappers, research prompts, and Deep Research prompts.
 - [Review and Change](skills/review-and-change/SKILL.md) reviews project, prompt, knowledge, or capability systems and plans controlled patches, rewrites, migrations, or supersession. It includes the review and change standard as callable depth for structural or cross-artifact work.
 
