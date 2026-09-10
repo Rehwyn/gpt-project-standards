@@ -1,0 +1,7 @@
+interface:
+  display_name: "Project Context Design"
+  short_description: "Design project context and capability systems"
+  default_prompt: "Use $project-context-design to design the instructions, sources, and capabilities for this project."
+
+policy:
+  allow_implicit_invocation: true

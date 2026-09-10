@@ -1,0 +1,7 @@
+interface:
+  display_name: "Review and Change"
+  short_description: "Review artifacts and plan controlled changes"
+  default_prompt: "Use $review-and-change to review this artifact and recommend the smallest responsible change."
+
+policy:
+  allow_implicit_invocation: true

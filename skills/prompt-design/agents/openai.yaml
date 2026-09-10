@@ -1,0 +1,7 @@
+interface:
+  display_name: "Prompt Design"
+  short_description: "Create reliable task and research prompts"
+  default_prompt: "Use $prompt-design to create a minimum-sufficient prompt for this task."
+
+policy:
+  allow_implicit_invocation: true
