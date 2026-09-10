@@ -86,6 +86,10 @@ Prefer project-first subtrees when brainstorming, drafting, review, implementati
 
 Prefer lane-first organization when the lane has genuinely distinct ownership, permissions, tooling, retention, or persistent operating rules and receives narrow, explicit inputs from projects. Do not use lane-first layout merely to make procedures easy to find; a Skill can provide reusable procedure without fragmenting project truth.
 
+### Executable modules or workspaces
+
+Use package, module, or workspace machinery when a unit has meaningful executable independence, such as its own dependencies, build or test commands, deployment target, or enforceable interface. Do not introduce that machinery merely to mirror workflow phases, reduce an assumed context window, or make a document-heavy repository appear modular; semantically coherent directories are sufficient when the units do not need independent execution contracts.
+
 ### Polyrepo or shared-core hybrid
 
 Split repositories when the boundary is independently justified by permissions, security, ownership, release cadence, retention, tooling environment, or weak coupling. Do not split solely to reduce instruction context or file count. A shared-core model needs a versioned distribution or materialization contract; a reference to important doctrine in another inaccessible repository is not reliable context.
@@ -109,6 +113,8 @@ Create a nested instruction file only when nearly every task intentionally launc
 Use a repository Skill when a recognizable task type needs conditional procedure, references, assets, or scripts. Keep must-not-miss repository invariants in persistent instructions or enforceable controls; successful Skill discovery should not be the sole safety mechanism for a requirement that cannot be missed.
 
 Treat launch location as part of the design because current instruction and repository-skill discovery are path-sensitive. Verify the actual chain with a fresh Codex run in the intended working directory. Do not assume that changing directories inside an existing run rebuilds startup context.
+
+Opening or editing a descendant file from a root-launched run does not activate that descendant's `AGENTS.md`. When local instructions materially affect correctness, start a fresh run in the intended working directory and verify the effective instruction chain on the Codex surface being used.
 
 ## 7. Make workflow transitions explicit
 
@@ -152,6 +158,8 @@ Use repository tooling when a rule can be checked deterministically and the cons
 - canonical identifiers are unique;
 - generated derivatives match their maintained sources;
 - indexes do not point to missing or superseded owners;
+- current pointers resolve and active-owner declarations remain unique;
+- status values are valid, archived or superseded references are marked, and required provenance is present;
 - forbidden dependency directions are absent;
 - public packages contain only allowlisted and sanitized files.
 

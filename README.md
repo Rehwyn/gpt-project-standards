@@ -9,9 +9,9 @@ The project favors minimum-sufficient guidance: communicate the goal, necessary 
 - [Project Context and Capability Design Standard](standards/0-01__Project_Context_And_Capability_Design_Standard.md) governs project setup, context and capability allocation, persistent instructions, knowledge and prompt design, reusable capabilities, discovery, and environment-specific deployment.
 - [Review and Change Ops Standard](standards/0-02__Review_And_Change_Ops_Standard.md) governs independent review, material findings, capability-fit evaluation, bounded changes, interface validation, and migrations.
 
-Both standards are Active at version 1.0.0. Stable filenames identify their interfaces; the metadata inside each file identifies its released version.
+The Project Context and Capability Design Standard is Active at version 1.0.0; the Review and Change Ops Standard is Active at version 1.0.1. Stable filenames identify their interfaces, and the metadata inside each file identifies its released version.
 
-The v1.1.0 bundle adds conditional Codex repository-architecture depth without changing either standard's version or authority.
+The v1.1.1 bundle refines the conditional Codex repository-architecture depth introduced in v1.1.0 and makes review, validation, and migration guidance more proportionate for solo and small-group work.
 
 ## Skills
 

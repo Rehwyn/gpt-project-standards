@@ -17,7 +17,7 @@ Handle ordinary review and bounded change work from this skill. Read only the re
 - claims behavioral improvement that needs matched validation design; or
 - exposes material review, severity, or change-strategy ambiguity not resolved here.
 
-The reference is a bundled snapshot of active standard `0-02` v1.0.0. Apply its relevant depth rather than summarizing it, and do not load it for routine review merely because it is available.
+The reference is a bundled snapshot of active standard `0-02` v1.0.1. Apply its relevant depth rather than summarizing it, and do not load it for routine review merely because it is available.
 
 ## Establish the review contract
 
@@ -30,13 +30,16 @@ Use severity when it helps action:
 - **Must:** blocks readiness or breaks correctness, safety, authority, a required interface, migration continuity, capability availability, or the requested outcome.
 - **Should:** materially affects reliability, clarity, maintenance, source or capability use, or coherence.
 - **Nice:** optional polish without material correctness effect.
-- **No action:** an acceptable tradeoff or false positive considered during review.
+
+`No action` is a verdict or disposition for an acceptable tradeoff, false positive, or issue that does not warrant change; it is not a finding severity.
 
 Group findings with one cause or fix and avoid false precision.
 
 ## Select checks by risk
 
 Use only checks that can detect likely failures or support the decision. Consider readiness, exact interfaces, source authority and freshness, compression loss, runtime/capability fit, competing owners, trigger overlap, migration continuity, permissions, and adversarial or high-cost failures as relevant.
+
+For ordinary local, reversible, and low-consequence work, direct inspection and cheap relevant checks may be sufficient. Escalate when consequence, uncertainty, irreversibility, external exposure, sensitive information, shared authority, dependent coupling, or exactness makes failure materially more costly.
 
 For capability fit, distinguish:
 
@@ -80,7 +83,7 @@ Increase outer fence depth when nested content requires it.
 
 ## Protect migrations
 
-For structural migration: inventory active sources and dependents; define the target owner model and crosswalk; classify material; draft without changing authority; validate content, interfaces, tooling, and representative use; prepare dependents without activation; preserve an unchanged archive; then activate replacements, switch dependents, regenerate outputs, supersede old sources, and finalize evidence as one controlled transition.
+For structural migration involving authority, interfaces, dependents, or generated state: inventory active sources and dependents; define the target owner model and crosswalk; classify material; draft without changing authority; validate content, interfaces, tooling, and representative use; prepare dependents without activation; and preserve an unchanged archive. Execute activation atomically or in controlled stages while keeping authority and compatible dependents explicit, then complete supersession, generated outputs, validation, and material recovery or residual-risk evidence. Ordinary bounded edits do not require migration artifacts merely because they change a file.
 
 Keep historical reports and archives historically accurate. Do not leave old and new owners active together silently.
 

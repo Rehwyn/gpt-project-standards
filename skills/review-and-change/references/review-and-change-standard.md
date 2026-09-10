@@ -1,8 +1,8 @@
 # 0-02 — Review and Change Ops Standard
 Document ID: 0-02__Review_And_Change_Ops_Standard
 Status: Active
-Version: 1.0.0
-Last Updated: 2026-09-09
+Version: 1.0.1
+Last Updated: 2026-09-10
 Purpose: Govern independent review, material findings, capability-fit evaluation, bounded changes, interface validation, and migrations.
 
 ## 1. Purpose and review contract
@@ -16,6 +16,8 @@ Use this standard when review or change work must support a decision such as:
 - approve an interface, source-authority, or deployment change.
 
 Review against the task, actual runtime, active owner sources, acceptance criteria, and exact interfaces. Use `0-01__Project_Context_And_Capability_Design_Standard` to design project/context systems, task and prompt contracts, reusable capabilities, and environment-specific deployment.
+
+This is an agent-facing review and change-reasoning standard, not a substitute for project-local operational, security, legal, regulatory, contractual, or professional controls. Apply stricter requirements when they govern the actual work; do not import them into ordinary low-risk tasks when they do not apply.
 
 An effective review:
 
@@ -67,13 +69,16 @@ Use these classes when severity helps drive action:
 | Must | Blocks readiness or breaks correctness, safety, authority, a required interface, migration continuity, capability availability, or the requested outcome |
 | Should | Materially affects reliability, clarity, maintenance, source or capability use, or coherence but does not block all use |
 | Nice | Optional polish or convenience with no material effect on correctness |
-| No action | A considered issue that is an acceptable tradeoff or false positive |
+
+`No action` is a verdict or disposition for an acceptable tradeoff, false positive, or issue that does not warrant change; it is not a finding severity.
 
 Do not inflate polish into a blocker or hide structural failures as suggestions. Group findings that share one cause or fix. When classification is uncertain, explain why and avoid false precision.
 
 ## 3. Risk-selected review checks
 
 Use the smallest set of checks that can detect likely failure and support the next action.
+
+Increase review depth when consequence, uncertainty, irreversibility, external exposure, sensitive information, shared authority, dependent coupling, or exact interfaces make failure materially more costly. Ordinary local, reversible, and low-consequence work may need only direct inspection and cheap relevant checks.
 
 | Risk or decision | Check |
 |---|---|
@@ -150,7 +155,7 @@ Increase outer fence depth when exact text contains fences. Validate the result 
 
 ## 7. Migration and supersession sequence
 
-Structural migrations have real sequence dependencies. Use this order unless the target system establishes a safer one:
+Structural migrations involving authority, interfaces, dependents, or generated state have real sequence dependencies. Use this order unless the target system establishes a safer one. Ordinary bounded edits do not require migration artifacts merely because they change a file.
 
 1. Inventory current active sources, interfaces, status, and known dependents.
 2. Define the target owner model and old-to-new crosswalk.
@@ -159,7 +164,7 @@ Structural migrations have real sequence dependencies. Use this order unless the
 5. Validate content, interfaces, references, tooling, and representative use.
 6. Prepare dependent and generated-output updates without activating them.
 7. Preserve an unchanged archival snapshot before changing active authority.
-8. In one controlled transition, activate the replacement, apply dependent updates, regenerate outputs, supersede the old source, and finalize the migration and validation record.
+8. Execute the controlled transition atomically or in stages as appropriate. Keep active authority and compatible dependent state explicit throughout; do not allow old and new owners to compete silently. Complete activation, dependent updates, generated outputs, supersession, validation, and recovery or residual-risk evidence required by the task.
 
 Preserve high-value identifiers when compatibility value exceeds structural cost. Retire low-value anchors, identifiers, or metadata through a crosswalk instead of carrying obsolete grammar indefinitely.
 
