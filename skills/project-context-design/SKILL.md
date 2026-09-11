@@ -21,7 +21,7 @@ Read only the relevant headings of [Project Context and Capability Design Standa
 - depends on an exact pattern or acceptance criterion not reproduced here; or
 - exposes material ambiguity that this skill does not resolve.
 
-This reference is a bundled snapshot of active standard `0-01` v1.0.0. Apply its relevant depth rather than summarizing it, and do not load it merely because it is available.
+This reference is a bundled snapshot of active standard `Project_Context_And_Capability_Design_Standard` v2.0.0. Apply its relevant depth rather than summarizing it, and do not load it merely because it is available.
 
 ### Codex repository reference
 
@@ -38,7 +38,7 @@ For consequential Codex architecture work, also consult the general standard ref
 Route within the Codex reference by need:
 
 - discovery, configuration, instruction scope, or repository Skills: sections 2 and 6;
-- repository topology, project-first or lane-first organization, splits, or worktrees: sections 3 and 5;
+- repository topology, project-first, lane-first, or hybrid workflow/project/subject organization, splits, or worktrees: sections 3 and 5;
 - authority, state, or handoffs: sections 4 and 7;
 - enforcement, failure analysis, or release validation: sections 8 through 10.
 

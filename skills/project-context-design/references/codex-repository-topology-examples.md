@@ -2,7 +2,7 @@
 
 Artifact Type: `Maintained platform-specific example set`
 Status: `Maintained`
-Last Reviewed: `2026-09-10`
+Last Reviewed: `2026-09-11`
 Source Posture: `Illustrates the active Project Context and Capability Design Standard and the maintained Codex Repository Architecture guide. These examples calibrate judgment; they are not templates, required anatomy, or a maturity ladder.`
 
 ## 1. Use these examples selectively
@@ -71,7 +71,41 @@ The project is the main semantic and authority unit. Shared Skills own reusable 
 
 Do not add every surface at repository creation. A project can begin with `brief.md`, `sources/`, and `outputs/`, then acquire state, handoffs, local instructions, or validation only when actual work creates the need.
 
-## 4. Lane-first exception
+## 4. Hybrid project, workflow, and subject repository
+
+Use a hybrid only when stable operating domains genuinely cross multiple projects or durable subjects and need more than a reusable method alone.
+
+```text
+repo/
+├── AGENTS.md                 # choose workflow and project/subject context separately
+├── .agents/
+│   └── skills/               # recurring method that does not need a workflow home
+├── workflows/
+│   ├── creative-development/
+│   │   ├── README.md         # narrow entry route and ownership boundary
+│   │   ├── procedures/       # only sequence-dependent operating guidance
+│   │   ├── references/       # workflow-specific depth, not copied subject truth
+│   │   └── tools/            # workflow-specific automation or validation
+│   └── production/
+│       └── ...
+├── projects/
+│   └── atlas/
+│       ├── brief.md
+│       ├── decisions/
+│       ├── state.md
+│       ├── prototypes/
+│       └── outputs/
+├── subjects/
+│   ├── characters/           # durable maintained domain truth
+│   └── groups/
+└── shared/                   # only genuinely cross-cutting sources and tools
+```
+
+The root routes along two axes: first identify the applicable workflow, then select the project or durable subject context the task actually needs. Workflow folders reference project state and subject truth rather than duplicating them. Durable subject areas may keep concise related-work routes without becoming workflow routers.
+
+Do not reproduce every shown subdirectory. A workflow may need only a short guide and one tool, or may be better represented entirely by a Skill. Keep the layout project-first when the proposed workflow boundary lacks recurring cross-project use, independently maintained guidance, conditional loading value, tooling, validation, lifecycle, or a real operating procedure.
+
+## 5. Lane-first exception
 
 Prefer a lane-first boundary only when the lane has persistent differences stronger than ordinary workflow reuse—for example separate permissions, maintainers, tooling, retention, or an independently governed intake/output contract.
 
@@ -89,7 +123,7 @@ repo/
 
 If drafting, review, or research differs only by reusable method, keep project truth together and express the method as a Skill. Do not create top-level lanes merely to make procedures easy to find.
 
-## 5. Launch location and instruction chain
+## 6. Launch location and instruction chain
 
 Given:
 
@@ -115,11 +149,12 @@ A root-started run does not acquire a descendant instruction file merely because
 
 Worktrees provide isolated mutable checkouts for concurrent work. They do not change which source is authoritative, replace a project/state model, or make an ambiguous tree coherent.
 
-## 6. Adaptation questions
+## 7. Adaptation questions
 
 Before proposing a tree, ask only the questions that change it:
 
 - What is the semantic unit whose truth should remain locally answerable?
+- Do recurring workflows cross projects or durable subjects strongly enough to justify a separate owner?
 - Which rules must shape nearly every run, and which are conditional workflows or references?
 - Which sources own doctrine, current state, exact interfaces, generated outputs, and history?
 - Are nested launches actually used, making local instruction scope meaningful?

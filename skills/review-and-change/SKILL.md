@@ -17,7 +17,7 @@ Handle ordinary review and bounded change work from this skill. Read only the re
 - claims behavioral improvement that needs matched validation design; or
 - exposes material review, severity, or change-strategy ambiguity not resolved here.
 
-The reference is a bundled snapshot of active standard `0-02` v1.0.1. Apply its relevant depth rather than summarizing it, and do not load it for routine review merely because it is available.
+The reference is a bundled snapshot of active standard `Review_And_Change_Ops_Standard` v2.0.0. Apply its relevant depth rather than summarizing it, and do not load it for routine review merely because it is available.
 
 ## Establish the review contract
 

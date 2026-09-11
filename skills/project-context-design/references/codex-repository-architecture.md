@@ -2,7 +2,7 @@
 
 Artifact Type: `Maintained platform-specific application guide`
 Status: `Maintained`
-Last Reviewed: `2026-09-10`
+Last Reviewed: `2026-09-11`
 Source Posture: `Applies the active Project Context and Capability Design Standard to source-controlled Codex work. The standard owns general doctrine. Current official OpenAI documentation owns Codex platform mechanics. This guide does not apply to ordinary ChatGPT Project design or generic codebase organization.`
 
 ## 1. Use and when repository architecture matters
@@ -83,6 +83,12 @@ Prefer one modular repository when projects or work streams share substantial do
 ### Project-first organization
 
 Prefer project-first subtrees when brainstorming, drafting, review, implementation, or publication stages share one project's truth. Keep its brief, sources, state, decisions, handoffs, outputs, and archive close enough that “what is true for this project?” has a local answer. Centralize reusable stage procedures as Skills instead of copying them into every project.
+
+### Hybrid project, workflow, and subject organization
+
+Consider a hybrid when recurring operating domains cross multiple projects or durable subject areas. Let projects own bounded initiative briefs, decisions, state, and outputs; durable subject areas own long-lived domain truth; workflows own reusable operating guidance, tools, and validation; and shared locations hold only material without a more specific owner. Root instructions may route to the applicable workflow and select project or subject context separately rather than loading every workflow or subject source.
+
+A `workflows/` boundary must earn its place through recurring cross-project use plus distinct authority, conditional loading, tooling, validation, lifecycle, or operating procedure. If only reusable method is needed, prefer a Skill. Link to project state and subject truth instead of copying either into workflow folders, and do not create a complete set of workflow subdirectories merely for symmetry.
 
 ### Lane-first organization
 

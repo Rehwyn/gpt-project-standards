@@ -6,12 +6,12 @@ The project favors minimum-sufficient guidance: communicate the goal, necessary 
 
 ## Standards
 
-- [Project Context and Capability Design Standard](standards/0-01__Project_Context_And_Capability_Design_Standard.md) governs project setup, context and capability allocation, persistent instructions, knowledge and prompt design, reusable capabilities, discovery, and environment-specific deployment.
-- [Review and Change Ops Standard](standards/0-02__Review_And_Change_Ops_Standard.md) governs independent review, material findings, capability-fit evaluation, bounded changes, interface validation, and migrations.
+- [Project Context and Capability Design Standard](standards/Project_Context_And_Capability_Design_Standard.md) governs project setup, context and capability allocation, persistent instructions, knowledge and prompt design, reusable capabilities, discovery, and environment-specific deployment.
+- [Review and Change Ops Standard](standards/Review_And_Change_Ops_Standard.md) governs independent review, material findings, capability-fit evaluation, bounded changes, interface validation, and migrations.
 
-The Project Context and Capability Design Standard is Active at version 1.0.0; the Review and Change Ops Standard is Active at version 1.0.1. Stable filenames identify their interfaces, and the metadata inside each file identifies its released version.
+Both standards are Active at version 2.0.0. Stable filenames identify their interfaces, and the metadata inside each file identifies its released version. Version 2.0.0 replaces the former numbered Document IDs and filenames with semantic identities; prior tags preserve the numbered interfaces.
 
-The v1.1.2 bundle adds selectively loaded Codex repository topology examples for concrete layout and comparison requests. The examples remain subordinate calibration aids rather than required templates. It retains the v1.1.1 proportional review guidance and refined Codex architecture reference.
+The v2.0.0 bundle also adds an optional hybrid project/workflow/subject topology for complex repositories whose recurring operating domains cross projects and durable subject areas. The boundary must earn its cost; smaller repositories should retain simpler project-first layouts.
 
 ## Skills
 

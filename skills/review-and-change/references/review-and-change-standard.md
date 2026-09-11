@@ -1,8 +1,8 @@
-# 0-02 — Review and Change Ops Standard
-Document ID: 0-02__Review_And_Change_Ops_Standard
+# Review and Change Ops Standard
+Document ID: Review_And_Change_Ops_Standard
 Status: Active
-Version: 1.0.1
-Last Updated: 2026-09-10
+Version: 2.0.0
+Last Updated: 2026-09-11
 Purpose: Govern independent review, material findings, capability-fit evaluation, bounded changes, interface validation, and migrations.
 
 ## 1. Purpose and review contract
@@ -15,7 +15,7 @@ Use this standard when review or change work must support a decision such as:
 - accept or reject a capability allocation or migration;
 - approve an interface, source-authority, or deployment change.
 
-Review against the task, actual runtime, active owner sources, acceptance criteria, and exact interfaces. Use `0-01__Project_Context_And_Capability_Design_Standard` to design project/context systems, task and prompt contracts, reusable capabilities, and environment-specific deployment.
+Review against the task, actual runtime, active owner sources, acceptance criteria, and exact interfaces. Use `Project_Context_And_Capability_Design_Standard` to design project/context systems, task and prompt contracts, reusable capabilities, and environment-specific deployment.
 
 This is an agent-facing review and change-reasoning standard, not a substitute for project-local operational, security, legal, regulatory, contractual, or professional controls. Apply stricter requirements when they govern the actual work; do not import them into ordinary low-risk tasks when they do not apply.
 
@@ -58,7 +58,7 @@ Boundary
 
 Do not force a finding count. “No material issues found” is valid when supported.
 
-This is a review-operation invocation interface, not a general prompt-design template. Use `0-01__Project_Context_And_Capability_Design_Standard` for general task and prompt contracts.
+This is a review-operation invocation interface, not a general prompt-design template. Use `Project_Context_And_Capability_Design_Standard` for general task and prompt contracts.
 
 ## 2. Severity and materiality
 

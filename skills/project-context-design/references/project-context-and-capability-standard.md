@@ -1,8 +1,8 @@
-# 0-01 — Project Context and Capability Design Standard
-Document ID: 0-01__Project_Context_And_Capability_Design_Standard
+# Project Context and Capability Design Standard
+Document ID: Project_Context_And_Capability_Design_Standard
 Status: Active
-Version: 1.0.0
-Last Updated: 2026-09-09
+Version: 2.0.0
+Last Updated: 2026-09-11
 Purpose: Govern project setup, context and capability allocation, persistent instructions, knowledge and prompt design, reusable capabilities, discovery, and environment-specific deployment.
 
 ## 1. Purpose and use
@@ -18,7 +18,7 @@ Use this standard when deciding how an LLM or agent should receive the context, 
 - memory, state, direct inspection, and source discovery;
 - split, merge, loading, and deployment decisions across runtimes.
 
-Use `0-02__Review_And_Change_Ops_Standard` for independent evaluation, severity, patch/rewrite decisions, exact changes, validation, migrations, and supersession.
+Use `Review_And_Change_Ops_Standard` for independent evaluation, severity, patch/rewrite decisions, exact changes, validation, migrations, and supersession.
 
 This standard defines allocation judgment, not a mandatory project anatomy. A small project may need only concise instructions and a few sources. A capable agent environment may use skills, tools, and validators. Neither is inherently more mature.
 
